@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image, ScrollView, ImageBackground } from 'react-native'
+import { View, StyleSheet, Image, ScrollView, ImageBackground } from 'react-native'
 
 // Placeholder images array
 const images = [

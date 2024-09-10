@@ -5,7 +5,6 @@ import Home from './home'
 import HireMe from './HireMe'
 import ArtworkExhibition from './ArtworkExhibition'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { View, StyleSheet } from 'react-native'
 
 const Tab = createBottomTabNavigator()
 

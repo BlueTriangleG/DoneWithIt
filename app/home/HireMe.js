@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image, ScrollView, SafeAreaView, ImageBackground } from 'react-native'
+import { Text, StyleSheet, Image, ScrollView, ImageBackground } from 'react-native'
 
 function HireMe () {
     return (

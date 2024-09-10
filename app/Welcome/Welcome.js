@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { ImageBackground, StyleSheet, Text, TouchableOpacity, View, Animated } from 'react-native'
 import { Icon } from '@rneui/themed'
-import colors from '../config/colors'
 
 function Welcome ({ navigation }) {
     // create a new Animated.Value, which is a special type of object that can be used to animate values

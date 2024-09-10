@@ -22,8 +22,9 @@ function Welcome ({ navigation }) {
         >
             {/* Text part */}
             <Animated.View style={[styles.contentContainer, { opacity: fadeAnim }]}>
-                <Text style={styles.welcomeText}>Hi, I am Gavin Hall</Text>
-                <Text style={styles.welcomeTextLittle}>This is my personal page</Text>
+                <Text style={styles.welcomeText}>Hi, I am </Text>
+                <Text style={styles.welcomeText}>Gavin Hall</Text>
+
             </Animated.View>
 
             {/* Button part */}
@@ -57,17 +58,19 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
     },
     welcomeText: {
-        fontSize: 35,
+        fontSize: 40,
         fontWeight: '700',
         color: 'white',
         textTransform: 'uppercase',
+        textAlign: 'center',
         fontFamily: 'sans-serif',
         paddingHorizontal: 40,
     },
     welcomeTextLittle: {
-        fontSize: 25,
+        fontSize: 20,
         fontWeight: '700',
         color: 'white',
+        top: 20,
         textTransform: 'uppercase',
         textAlign: 'center',
         fontFamily: 'sans-serif',

@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator, TransitionSpecs, CardStyleInterpolators } from '@react-navigation/stack'
 
 import Welcome from './app/Welcome/Welcome'
-import Home from './app/home/home'
 import HomeNavigator from './app/home/homeNavigator'
 const Stack = createStackNavigator()
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
+import { View, Text, StyleSheet, Image, ScrollView, ImageBackground } from 'react-native'
 
 // Placeholder images array
 const images = [
@@ -19,14 +19,18 @@ const images = [
 
 function ArtworkExhibition () {
     return (
-        <ScrollView contentContainerStyle={styles.container}>
+        <ImageBackground
+            style={styles.background}
+            source={require("../assets/bg.jpg")}>
+            <ScrollView contentContainerStyle={styles.container}>
 
-            <View style={styles.gridContainer}>
-                {images.map((image, index) => (
-                    <Image key={index} source={image} style={styles.image} />
-                ))}
-            </View>
-        </ScrollView>
+                <View style={styles.gridContainer}>
+                    {images.map((image, index) => (
+                        <Image key={index} source={image} style={styles.image} />
+                    ))}
+                </View>
+            </ScrollView>
+        </ImageBackground>
     )
 }
 
@@ -48,7 +52,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',  // Distribute images evenly
     },
     image: {
-        width: 180,  // Fixed width for each image
+        width: "45%",  // Fixed width for each image
         height: 300,  // Fixed height for each image
         marginBottom: 20,
         borderRadius: 10,  // Add rounded corners to the images
